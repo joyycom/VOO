@@ -1,0 +1,62 @@
+---
+# 选项内容可以参考 http://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+# 使用 LLVM 作为基础风格
+BasedOnStyle: LLVM
+
+# 缩进为 4 空格
+IndentWidth: 4	
+
+# 每列字符 120
+ColumnLimit: 120
+
+# 指针符号和引用符号靠右，比如 int *a;
+PointerAlignment: Right
+
+# BreakBeforeBraces: Allman
+BreakBeforeBraces: Attach
+
+# 换行符号 \ 靠左对齐
+AlignEscapedNewlines: Left
+
+# 属性之后添加一个空格，比如 @property (readonly)，而不是 @property(readonly)
+ObjCSpaceAfterProperty: true
+
+# OC block 里面的缩进为 4 空格
+ObjCBlockIndentWidth: 4
+
+# 函数定义的时候，参数超过一行之后，一行写一个参数
+BinPackParameters: false
+
+# 函数调用的时候，参数超过一行之后，一行写一个参数
+BinPackArguments: false
+
+PenaltyReturnTypeOnItsOwnLine: 100
+
+# 函数就算很短小，也不能写成一行
+AllowShortFunctionsOnASingleLine: false
+
+AllowShortLambdasOnASingleLine: false
+
+# 初始化列表
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+AllowAllConstructorInitializersOnNextLine: false
+
+# 不要让参数折行
+AllowAllParametersOfDeclarationOnNextLine: false
+
+# case 语句需要缩进
+IndentCaseLabels: true
+
+# 模板声明，需要单独占一行，for C++
+AlwaysBreakTemplateDeclarations: true
+
+# 名字空间不缩进，for C++
+NamespaceIndentation: None
+
+# private, public 等修饰符向左缩进一些，for C++
+AccessModifierOffset: -4
+
+SortIncludes: false
+
+SortUsingDeclarations: false

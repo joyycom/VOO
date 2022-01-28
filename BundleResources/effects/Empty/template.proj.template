@@ -1,0 +1,17 @@
+{
+    "anchor": "{{anchor}}",
+    "createTimestamp": "{{createTimestamp}}",
+    "id": "{{id}}",
+    "inputConfig": "{{inputConfig}}",
+    "isDebug": "0",
+    "lastChangedTimestamp": "{{lastChangedTimestamp}}",
+    "ofFile": "{{ofFile}}",
+    "remoteId": "{{remoteId}}",
+    "resFile": "",
+    "skyFile": "",
+    "summary": "{{summary}}",
+    "thumb": "{{thumb}}",
+    "title": "{{title}}",
+    "type": "{{type}}",
+    "version": "{{version}}"
+}

@@ -1,0 +1,80 @@
+{
+	"name": "of-effect",
+	"displayName": "VOO Of Effect",
+	"description": "",
+	"version": "1.1.0",
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"publisher": "VOO",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onUri",
+		"onCommand:voo.of-effect.reloadEffect",
+		"onLanguage:ofeffect",
+		"onLanguage:lua"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "ofeffect",
+				"aliases": [
+					"ofeffect"
+				],
+				"extensions": [
+					".ofeffect"
+				]
+			}
+		],
+		"commands": [
+			{
+				"command": "voo.of-effect.reloadEffect",
+				"title": "刷新VOO特效"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "voo.of-effect.reloadEffect",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "npm run compile-tests && npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/mustache": "^4.1.2",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.47.0",
+		"@types/ws": "^8.2.2",
+		"@typescript-eslint/eslint-plugin": "^5.1.0",
+		"@typescript-eslint/parser": "^5.1.0",
+		"@vscode/test-electron": "^1.6.2",
+		"eslint": "^8.1.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.3",
+		"ts-loader": "^9.2.5",
+		"typescript": "^4.4.4",
+		"webpack": "^5.52.1",
+		"webpack-cli": "^4.8.0"
+	},
+	"dependencies": {
+		"websocket": "^1.0.34",
+		"ws": "^8.3.0"
+	}
+}

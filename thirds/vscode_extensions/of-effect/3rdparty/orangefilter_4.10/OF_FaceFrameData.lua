@@ -1,0 +1,106 @@
+--* This Document is AutoGenerate by OrangeFilter, Don't Change it! *
+
+---@meta
+
+---
+---[3.2]face data[parent:]
+---
+---@class OF_FaceFrameData
+---
+---[4.1]face box
+---
+---@field box float[]
+---
+---[4.1.2]face score
+---
+---@field score float
+---
+---[3.2]face points
+---
+---@field facePoints float[]
+---
+---[3.2]face point count
+---
+---@field facePointsCount int
+---
+---[4.6]extra face points
+---
+---@field extraFacePoints float[]
+---
+---[4.6]extra face point count
+---
+---@field extraFacePointsCount int
+---
+---[4.6]eyeball points
+---
+---@field eyeballPoints float[]
+---
+---[4.6]eyeball point count
+---
+---@field eyeballPointsCount int
+---
+---[3.2]open mouth intensity
+---
+---@field openMouthIntensity float
+---
+---[3.2]is mouth open
+---
+---@field isMouthOpen int
+---
+---[3.2]is eye blink
+---
+---@field isEyeBlink int
+---
+---[3.2]is head yaw
+---
+---@field isHeadYaw int
+---
+---[3.2]is head pitch
+---
+---@field isHeadPitch int
+---
+---[3.2]is brow jump
+---
+---@field isBrowJump int
+---
+---[3.2]head pos matrices
+---
+---@field headPose OF_HeadPose#of_headpose
+---
+---[3.9]face mesh vertices
+---
+---@field faceMesh OF_FaceMesh#of_facemesh
+---
+---[3.9]blendshape weight map
+---
+---@field blendshapeWeightMap float[]
+---
+---[4.5]left eye local rotation in radians
+---
+---@field leftEyeRotation float[]
+---
+---[4.5]right eye local rotation in radians
+---
+---@field rightEyeRotation float[]
+---
+---[4.7]left eye local rotation in radians
+---
+---@field headRotation float[]
+---
+---[4.8]faces occlude mask
+---
+---@field maskTexture OF_Texture#of_texture
+---
+---[4.8]faces occlude rect
+---
+---@field faceRect float[]
+
+OF_FaceFrameData = {}
+
+---
+---[3.2]constructor, no param
+---
+--- @nodiscard
+function OF_FaceFrameData:new() end
+
+return OF_FaceFrameData

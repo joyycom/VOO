@@ -1,0 +1,80 @@
+--* This Document is AutoGenerate by OrangeFilter, Don't Change it! *
+
+---@meta
+
+---
+---[3.2]RENDER_CONSTANT
+---
+---@class RENDER_CONSTANT
+---
+---[3.2]color format
+---
+---@field RGBA
+---
+---[4.9]color format
+---
+---@field RGB
+---
+---[4.5]color format
+---
+---@field RGBA16F
+---
+---[4.7]color format
+---
+---@field RED
+---
+---[4.7]color format
+---
+---@field RG
+---
+---[4.7]stencil format
+---
+---@field STENCIL_INDEX8
+---
+---[3.6]color format
+---
+---@field ALPHA
+---
+---[4.10]color format
+---
+---@field LUMINANCE_ALPHA
+---
+---[4.1]depth format
+---
+---@field DEPTH_COMPONENT
+---
+---[3.2]target type
+---
+---@field TEXTURE_2D
+---
+---[4.7]target type
+---
+---@field TEXTURE_CUBE_MAP
+---
+---[3.6]target type
+---
+---@field RENDERBUFFER
+---
+---[3.2]texture filter mode
+---
+---@field LINEAR
+---
+---[3.2]texture filter mode
+---
+---@field NEAREST
+---
+---[3.2]texture wrap mode
+---
+---@field CLAMP_TO_EDGE
+---
+---[3.2]texture wrap mode
+---
+---@field REPEAT
+---
+---[4.7]texture wrap mode
+---
+---@field CLAMP_TO_BORDER
+
+RENDER_CONSTANT = {}
+
+return RENDER_CONSTANT

@@ -1,0 +1,68 @@
+--* This Document is AutoGenerate by OrangeFilter, Don't Change it! *
+
+---@meta
+
+---
+---[3.2]OF_ResType
+---
+---@class OF_ResType
+---
+---[3.2]Image
+---
+---@field OF_ResType_Image
+---
+---[3.2]3DMesh
+---
+---@field OF_ResType_3DMesh
+---
+---[3.2]Particle
+---
+---@field OF_ResType_Particle
+---
+---[3.2]SVGA
+---
+---@field OF_ResType_SVGA
+---
+---[3.2]TTF
+---
+---@field OF_ResType_TTF
+---
+---[3.2]LuaScript
+---
+---@field OF_ResType_LuaScript
+---
+---[3.2]Music
+---
+---@field OF_ResType_Music
+---
+---[3.2]3DLUT
+---
+---@field OF_ResType_3DLUT
+---
+---[4.0]VS
+---
+---@field OF_ResType_VS
+---
+---[4.0]PS
+---
+---@field OF_ResType_PS
+---
+---[4.0]WebM
+---
+---@field OF_ResType_WebM
+---
+---[4.0]Animation
+---
+---@field OF_ResType_Animation
+---
+---[4.0]Video
+---
+---@field OF_ResType_Video
+---
+---[4.2]Effect
+---
+---@field OF_ResType_Effect
+
+OF_ResType = {}
+
+return OF_ResType

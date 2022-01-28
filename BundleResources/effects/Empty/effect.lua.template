@@ -1,0 +1,133 @@
+---@diagnostic disable: discard-returns
+TAG = "OrangeFilter-{{name}}Filter"
+OF_LOGI(TAG, "Call {{name}}Filter lua script!")
+
+---@class {{name}}Filter
+{{name}}Filter = {
+    vs = [[
+        precision mediump float;
+        attribute vec4 aPosition;
+        attribute vec4 aTextureCoord;
+        varying vec2 vTexCoord;
+        void main()
+        {
+            gl_Position = aPosition;
+            vTexCoord = aTextureCoord.xy;
+        }
+        ]],
+    fs = [[
+        precision mediump float;
+        uniform sampler2D uTexture0;
+        uniform vec2 uResolution;
+        uniform float uTime;
+        varying vec2 vTexCoord;
+
+        void main()
+        {
+            vec2 pixelCoord = vTexCoord.xy/uResolution.xy; 
+            vec3 cyan = vec3(0.0, 2.0, 4.0);
+            float R = pixelCoord.x;
+            float G = pixelCoord.y;
+            float B = pixelCoord.x;
+            vec3 rgb = 0.5 + 0.5 * cos(uTime + vec3(R,G,B) + cyan);
+            vec4 color = vec4(rgb, 0.8);
+            
+            vec4 bg = texture2D(uTexture0, vTexCoord);
+            gl_FragColor = mix(bg, color, color.a);
+            
+            
+            
+        }
+        ]],
+    renderPass = nil,
+}
+
+---@param context Context
+---@param filter CustomLuaFilterPrivate
+---@return OF_Result
+function {{name}}Filter:initParams(context, filter)
+    OF_LOGI(TAG, "call initParams")
+
+    return OF_Result_Success
+end
+
+---@param context Context
+---@param filter CustomLuaFilterPrivate
+---@return OF_Result
+function {{name}}Filter:onApplyParams(context, filter)
+    return OF_Result_Success
+end
+
+---@param context Context
+---@param filter CustomLuaFilterPrivate
+---@return OF_Result
+function {{name}}Filter:initRenderer(context, filter)
+    OF_LOGI(TAG, "call initRenderer")
+    self.renderPass = context:createCustomShaderPass(self.vs, self.fs)
+    return OF_Result_Success
+end
+
+---@param context Context
+---@param filter CustomLuaFilterPrivate
+---@return OF_Result
+function {{name}}Filter:teardownRenderer(context, filter)
+    OF_LOGI(TAG, "call teardownRenderer")
+    if self.renderPass then
+        context:destroyCustomShaderPass(self.renderPass)
+        self.renderPass = nil
+    end
+    return OF_Result_Success
+end
+
+---@param context Context
+---@param filter CustomLuaFilterPrivate
+---@param frameData OF_FrameData
+---@param inTexArray OF_Texture[]
+---@param outTexArray OF_Texture[]
+---@return OF_Result
+function {{name}}Filter:applyFrame(context, filter, frameData, inTexArray, outTexArray)
+    context:copyTexture(inTexArray[1], outTexArray[1])
+
+    context:bindFBO(outTexArray[1])
+    context:setViewport(0, 0, outTexArray[1].width, outTexArray[1].height)
+    context:setBlend(false)
+    
+    self.renderPass:use()
+    self.renderPass:setUniformTexture("uTexture0", 0, inTexArray[1].textureID, TEXTURE_2D)
+    self.renderPass:setUniform2f("uResolution", inTexArray[1].width, inTexArray[1].height)
+    self.renderPass:setUniform1f("uTime", filter:filterTimestamp() / filter:duration())
+
+    context:sharedQuadRender():draw(self.renderPass, false)
+    context:setBlend(false)
+
+    if inTexArray[2] == nil then
+        return OF_Result_Success
+    end
+    return OF_Result_Success
+end
+
+---@param context Context
+---@return OF_RequiredFrameData
+function {{name}}Filter:requiredFrameData(context, game)
+    return {
+        OF_RequiredFrameData_None
+    }
+end
+
+---@param context Context
+---@param filter CustomLuaFilterPrivate
+---@return OF_Result
+function {{name}}Filter:readObject(context, filter, archiveIn)
+    OF_LOGI(TAG, "call readObject")
+    return OF_Result_Success
+end
+
+---@param context Context
+---@param filter CustomLuaFilterPrivate
+---@return OF_Result
+function {{name}}Filter:writeObject(context, filter, archiveOut)
+    OF_LOGI(TAG, "call writeObject")
+    return OF_Result_Success
+end
+
+return {{name}}Filter

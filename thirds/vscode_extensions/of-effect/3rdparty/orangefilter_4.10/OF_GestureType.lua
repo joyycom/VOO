@@ -1,0 +1,108 @@
+--* This Document is AutoGenerate by OrangeFilter, Don't Change it! *
+
+---@meta
+
+---
+---[3.2]gesture type
+---
+---@class OF_GestureType
+---
+---[3.2]Unknow
+---
+---@field OF_GestureType_Unknow
+---
+---[3.2]V
+---
+---@field OF_GestureType_V
+---
+---[3.2]ThumbUp
+---
+---@field OF_GestureType_ThumbUp
+---
+---[3.2]OneHandHeart
+---
+---@field OF_GestureType_OneHandHeart
+---
+---[3.2]Lift
+---
+---@field OF_GestureType_Lift
+---
+---[3.2]TwoHandHeart
+---
+---@field OF_GestureType_TwoHandHeart
+---
+---[3.2]Size
+---
+---@field OF_GestureType_Size
+---
+---[3.2]Palm
+---
+---@field OF_GestureType_Palm
+---
+---[3.2]ZuoYi
+---
+---@field OF_GestureType_ZuoYi
+---
+---[3.2]PalmClose
+---
+---@field OF_GestureType_PalmClose
+---
+---[3.2]PalmOpen
+---
+---@field OF_GestureType_PalmOpen
+---
+---[3.2]PalmTogether
+---
+---@field OF_GestureType_PalmTogether
+---
+---[4.1]Unknow
+---
+---@field OF_GestureType_Retina_Unknow
+---
+---[4.1]V
+---
+---@field OF_GestureType_Retina_V
+---
+---[4.1]ThumbUp
+---
+---@field OF_GestureType_Retina_ThumbUp
+---
+---[4.1]OneHandHeart
+---
+---@field OF_GestureType_Retina_OneHandHeart
+---
+---[4.1]Spiderman
+---
+---@field OF_GestureType_Retina_Spiderman
+---
+---[4.1]Lift
+---
+---@field OF_GestureType_Retina_Lift
+---
+---[4.1]666
+---
+---@field OF_GestureType_Retina_666
+---
+---[4.1]TwoHandHeart
+---
+---@field OF_GestureType_Retina_TwoHandHeart
+---
+---[4.1]ZuoYi
+---
+---@field OF_GestureType_Retina_ZuoYi
+---
+---[4.1]PalmOpen
+---
+---@field OF_GestureType_Retina_PalmOpen
+---
+---[4.1]PalmTogether
+---
+---@field OF_GestureType_Retina_PalmTogether
+---
+---[4.1]OK
+---
+---@field OF_GestureType_Retina_OK
+
+OF_GestureType = {}
+
+return OF_GestureType

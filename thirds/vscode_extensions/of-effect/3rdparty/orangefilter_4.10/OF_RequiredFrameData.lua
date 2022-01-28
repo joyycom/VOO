@@ -1,0 +1,68 @@
+--* This Document is AutoGenerate by OrangeFilter, Don't Change it! *
+
+---@meta
+
+---
+---[3.2]OF_RequiredFrameData
+---
+---@class OF_RequiredFrameData
+---
+---[3.2]None
+---
+---@field OF_RequiredFrameData_None
+---
+---[3.2]FaceLandmarker
+---
+---@field OF_RequiredFrameData_FaceLandmarker
+---
+---[3.2]HeadPoseEstimate
+---
+---@field OF_RequiredFrameData_HeadPoseEstimate
+---
+---[3.2]Gesture
+---
+---@field OF_RequiredFrameData_Gesture
+---
+---[3.2]Body
+---
+---@field OF_RequiredFrameData_Body
+---
+---[3.2]BackgroundSegment
+---
+---@field OF_RequiredFrameData_BackgroundSegment
+---
+---[3.2]ArCamera
+---
+---@field OF_RequiredFrameData_ArCamera
+---
+---[3.2]AudioBeat
+---
+---@field OF_RequiredFrameData_AudioBeat
+---
+---[3.6]Avatar
+---
+---@field OF_RequiredFrameData_Avatar
+---
+---[4.3]Body3D
+---
+---@field OF_RequiredFrameData_Body3D
+---
+---[4.4]MicVolume
+---
+---@field OF_RequiredFrameData_MicVolume
+---
+---[4.4]BodyContour
+---
+---@field OF_RequiredFrameData_BodyContour
+---
+---[4.4]HairSegment
+---
+---@field OF_RequiredFrameData_HairSegment
+---
+---[4.6]ClothesSegment
+---
+---@field OF_RequiredFrameData_ClothesSegment
+
+OF_RequiredFrameData = {}
+
+return OF_RequiredFrameData

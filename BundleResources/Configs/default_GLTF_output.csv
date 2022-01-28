@@ -1,0 +1,3 @@
+type,group,count,exportParam
+image,GLTF,1,"[ { ""filterIndex"": 0, ""paramName"": ""TransX"", ""defValue"": 0 },{ ""filterIndex"": 0, ""paramName"": ""TransY"", ""defValue"": 0 },{ ""filterIndex"": 0, ""paramName"": ""ModelPosZ"", ""defValue"": 0 },{ ""filterIndex"": 0, ""paramName"": ""ModelRotX"", ""defValue"": 0 },{ ""filterIndex"": 0, ""paramName"": ""ModelRotY"", ""defValue"": 0 },{ ""filterIndex"": 0, ""paramName"": ""Rotate"", ""defValue"": 180 },{ ""filterIndex"": 0, ""paramName"": ""Scale"", ""defValue"": 1 } ]"
+image,GLTF,100,""
