@@ -11,11 +11,6 @@ Debug/
 thirds/*/CMakeFiles/
 thirds/*/CMakeScripts/
 thirds/*/Debug/
-thirds/dependencies
-thirds/dependencies_inner/ftp
-thirds/dependencies_inner/repo
-thirds/dependencies_inner/config/Downloads
-thirds/dependencies_inner/config/pytools/get_depend_data.log
 *_autogen
 BuildConfig.h
 CMakeCache.txt
