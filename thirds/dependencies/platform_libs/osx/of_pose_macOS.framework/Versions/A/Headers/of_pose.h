@@ -1,4 +1,4 @@
-﻿/***************** BEGIN FILE HRADER BLOCK *********************************
+/***************** BEGIN FILE HRADER BLOCK *********************************
  *
  * \author Cheng Yu <chengyu@yy.com> phone:13710201865
  *

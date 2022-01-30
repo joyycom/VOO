@@ -1,4 +1,4 @@
-﻿//
+//
 //  vn2_segment.h
 //  venus
 //

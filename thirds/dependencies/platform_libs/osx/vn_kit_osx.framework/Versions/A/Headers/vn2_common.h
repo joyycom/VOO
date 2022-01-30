@@ -1,4 +1,4 @@
-﻿#ifndef _VN2_COMMON_H_
+#ifndef _VN2_COMMON_H_
 #define _VN2_COMMON_H_
 
 

@@ -1,4 +1,4 @@
-﻿#ifndef VN2_IMAGENET12_H
+#ifndef VN2_IMAGENET12_H
 #define VN2_IMAGENET12_H
 
 #include "vnkit/vn2_core.h"

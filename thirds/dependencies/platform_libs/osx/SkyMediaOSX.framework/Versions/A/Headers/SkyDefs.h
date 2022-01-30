@@ -1,4 +1,7 @@
-﻿#pragma once
+#pragma once
+
+#include <cstdint>
+#include <cstring>
 
 #if defined(_MSC_VER)
 #define SKY_DEPRECATED
@@ -73,6 +76,21 @@ public:
 
 private:
     void *m_impl;
+};
+
+struct SKYMEDIA_API SkyHash final {
+    bool operator<(const SkyHash &rhs) const {
+        return memcmp(data, rhs.data, 16) < 0;
+    }
+
+    bool operator==(const SkyHash &rhs) const {
+        return memcmp(data, rhs.data, 16) == 0;
+    }
+
+    bool operator!=(const SkyHash &rhs) const {
+        return !(*this == rhs);
+    }
+    uint8_t data[16] = {0}; // 初始清 0
 };
 
 struct SKYMEDIA_API SkyRect final {

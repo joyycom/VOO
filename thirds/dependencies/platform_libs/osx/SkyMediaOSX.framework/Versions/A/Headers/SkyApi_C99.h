@@ -1,4 +1,4 @@
-﻿#ifndef __SKYAPI_C99_H__
+#ifndef __SKYAPI_C99_H__
 #define __SKYAPI_C99_H__
 
 #include <stdint.h>

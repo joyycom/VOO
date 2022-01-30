@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "SkyDefs.h"
 #include "SkyParams.h"
@@ -31,6 +31,8 @@ public:
     int getRGBA8DatSize() const;
 
     bool isGapPlaceholder() const;
+
+    SkyHash getHash() const;
 
     // 注意，需要 RGBA 数据类型，才能保存到文件。假如是纹理，保存失败。
     bool savePngToFile(const char *path) const;

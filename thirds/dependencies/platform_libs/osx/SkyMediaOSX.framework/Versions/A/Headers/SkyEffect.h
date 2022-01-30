@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "SkyCaches.h"
 #include "SkyCurve.h"

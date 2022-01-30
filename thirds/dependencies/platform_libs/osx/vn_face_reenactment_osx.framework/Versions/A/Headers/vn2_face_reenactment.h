@@ -1,4 +1,4 @@
-﻿//
+//
 //  vn2_face_reenactment.h
 //  venus
 //

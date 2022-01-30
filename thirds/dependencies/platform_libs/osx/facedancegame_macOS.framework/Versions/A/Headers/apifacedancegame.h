@@ -1,4 +1,4 @@
-﻿#ifndef apifacedancegame_h__
+#ifndef apifacedancegame_h__
 #define apifacedancegame_h__
 
 #include "orangefilter.h"
