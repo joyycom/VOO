@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "SkyDefs.h"
 #include "SkyVariant.h"
@@ -10,10 +10,6 @@ typedef enum {
     SkyCachesStrategy_Memory = 1,        // 只缓存在内存（内存不足时，会自动清除）
     SkyCachesStrategy_MemoryAndDisk = 2, // 内存和磁盘（内存不足时，会写到磁盘）
 } SkyCachesStrategy;
-
-struct SKYMEDIA_API SkyHash final {
-    uint8_t data[16] = {0}; // 初始清 0
-};
 
 class SKYMEDIA_API SkyCaches final {
 public:

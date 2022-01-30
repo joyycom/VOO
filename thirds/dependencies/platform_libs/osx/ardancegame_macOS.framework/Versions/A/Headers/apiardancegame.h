@@ -1,4 +1,4 @@
-﻿#ifndef apiardancegame_h__
+#ifndef apiardancegame_h__
 #define apiardancegame_h__
 
 #include "orangefilter.h"

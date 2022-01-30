@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "SkyDefs.h"
 #include "SkyParams.h"

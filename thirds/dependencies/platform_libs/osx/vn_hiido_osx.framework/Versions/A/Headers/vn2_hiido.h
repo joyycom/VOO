@@ -1,4 +1,4 @@
-﻿#ifndef _VN_HIIDO_H_
+#ifndef _VN_HIIDO_H_
 #define _VN_HIIDO_H_
 
 #include "vn2_core.h"

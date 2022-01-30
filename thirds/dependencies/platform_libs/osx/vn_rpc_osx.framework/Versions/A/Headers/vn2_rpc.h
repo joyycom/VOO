@@ -1,4 +1,4 @@
-﻿#ifndef venus_rpc_vn2_rpc_h
+#ifndef venus_rpc_vn2_rpc_h
 #define venus_rpc_vn2_rpc_h
 
 #ifdef __cplusplus

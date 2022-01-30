@@ -1,4 +1,4 @@
-﻿#ifndef vn2_pose_h
+#ifndef vn2_pose_h
 #define vn2_pose_h
 
 #include "vn2_common.h"

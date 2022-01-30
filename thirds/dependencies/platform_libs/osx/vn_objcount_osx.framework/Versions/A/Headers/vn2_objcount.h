@@ -1,4 +1,4 @@
-﻿//
+//
 //  vn2_objcount.h
 //  venus
 //

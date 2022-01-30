@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "SkyAsyncTask.h"
 #include "SkyAudioDecoder.h"
@@ -203,8 +203,19 @@ public:
     SkyVideoDecoder openVideoDecoder(const SkyResource &res) const;
     SkyAudioDecoder openAudioDecoder(const SkyResource &res) const;
 
-    SkyAsyncTask
-    retrieveVideoAsync(const SkyResource &res, double time, SkyRetrieveMode retrieveMode, SkyDecodeCallback callback);
+    // 传入时间值，返回对应的精确帧和前一个关键帧的信息。
+    struct VideoFrameInfo {
+        SkyHash accurateFrameHash;
+        SkyHash keyFrameHash;
+        double accurateTimestamp = 0;
+        double keyFrameTimestamp = 0;
+    };
+    VideoFrameInfo getVideoFrameInfo(const SkyResource &res, double time) const;
+
+    SkyAsyncTask retrieveVideoAsync(const SkyResource &res,
+                                    double time,
+                                    SkyRetrieveMode retrieveMode,
+                                    SkyDecodeCallback callback) const;
 
     int getMaxGPUTextureSize() const;
 

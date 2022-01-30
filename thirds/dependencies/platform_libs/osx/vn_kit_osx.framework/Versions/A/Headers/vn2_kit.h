@@ -1,4 +1,4 @@
-﻿#ifndef _VN2_KIT_H_
+#ifndef _VN2_KIT_H_
 #define _VN2_KIT_H_
 
 #include "vn2_core.h"
