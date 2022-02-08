@@ -1,6 +1,5 @@
 /***************** BEGIN FILE HRADER BLOCK *********************************
  *
- * \author Cheng Yu <chengyu@yy.com> phone:13710201865
  *
  * Copyright (C) 2016-2020 JOYY.Inc
  * All rights reserved.
